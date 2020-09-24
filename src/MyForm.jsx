@@ -19,7 +19,7 @@ export const MyForm = () => {
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
       <Button variant="primary" type="submit">
-        Submit
+        Submited
       </Button>
     </Form>
   );
