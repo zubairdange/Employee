@@ -5,6 +5,7 @@ import { MyForm } from "./MyForm";
 import { MyAlert } from "./MyAlert";
 import { MyNavbar } from "./MyNavbar";
 import { MyTable } from "./MyTable";
+import { Sales } from "./Sales";
 
 export const Home = () => {
   return (
@@ -24,11 +25,12 @@ export const Home = () => {
       </Dropdown>
       <MyNavbar />
       <br></br>
-      <MyTable />
-      <MyForm />
-      <MyCard />
 
-      <MyAlert />
+      {/*<MyForm />
+      <MyCard />
+      <MyTable />
+      <MyAlert />*/}
+      <Sales />
     </div>
   );
 };
