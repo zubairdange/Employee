@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Dropdown from "react-dropdown";
 import { Row, Col, Container } from "react-bootstrap";
 import "react-dropdown/style.css";
+import { DisplaySales } from "./DisplaySales";
 export const Sales = () => {
   const [Person, setPerson] = useState("Suleman Sha");
   const [Location, setLocation] = useState("Delhi");
@@ -17,7 +18,7 @@ export const Sales = () => {
               options={Nameoptions}
               value={Nameoptions[0]}
               placeholder="Select an Name"
-              onChange={(e) => setPerson(e.value[0])}
+              onChange={(e) => setPerson(e.value)}
             />
           </Col>
           <Col>
@@ -31,7 +32,7 @@ export const Sales = () => {
           </Col>
         </Row>
         <b>
-          You Have Selected {Person} and Location is {Location}
+          <DisplaySales person={Person} and Location is location={Location} />
         </b>
       </Container>
     </div>

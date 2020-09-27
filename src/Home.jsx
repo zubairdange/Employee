@@ -6,6 +6,7 @@ import { MyAlert } from "./MyAlert";
 import { MyNavbar } from "./MyNavbar";
 import { MyTable } from "./MyTable";
 import { Sales } from "./Sales";
+import { MyTextbox } from "./MyTextBox";
 
 export const Home = () => {
   return (
@@ -31,6 +32,7 @@ export const Home = () => {
       <MyTable />
       <MyAlert />*/}
       <Sales />
+      <MyTextbox />
     </div>
   );
 };
